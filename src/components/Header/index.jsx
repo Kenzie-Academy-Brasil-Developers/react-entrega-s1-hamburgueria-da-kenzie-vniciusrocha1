@@ -1,8 +1,9 @@
 import './style.css';
 import Logo from '../../img/logo.svg';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 const Header = ({setFiltro}) => {
     const [valueSearch, setValueSearch] = useState("");
+    useEffect(() => setFiltro((valueSearch !== "")? valueSearch : "Todos"),[valueSearch]);
     return (
         <header className="header--all">
             <img className="all--logo" src={Logo} alt="Burger Kenzie"></img>

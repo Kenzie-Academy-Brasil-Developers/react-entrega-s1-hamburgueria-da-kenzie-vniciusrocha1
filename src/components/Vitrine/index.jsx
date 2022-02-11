@@ -9,6 +9,8 @@ const Vitrine = ({vitrine,addCarrinho,filtro}) => {
                 <span   className="card-data--name">    {name}</span>
                 <span   className="card-data--category">{category}</span>
                 <span   className="card-data--price">   {price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span>
+            </div>
+            <div className="card-button">
                 <button className="Button Green" onClick = {() => addCarrinho(id)}> Adicionar</button>
             </div>
         </div>

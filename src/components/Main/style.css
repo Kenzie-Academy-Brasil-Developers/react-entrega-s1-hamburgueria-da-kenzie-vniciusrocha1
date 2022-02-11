@@ -29,6 +29,8 @@
     gap: 20px;
     overflow: auto;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 .main--carrinho{
     width: 385px;
@@ -41,24 +43,22 @@
 @media screen and (max-width:768px){
     .all--main{
         padding: 0;
-        height: 100%;
         flex-direction: column;
         align-items: center;
         gap: 5px;
     }
     .all--main > .main--vitrine{
         width: 100%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding:5px;
-        gap:0;
-        box-sizing: border-box;
+        height: calc(100% - 233px);
+        padding: 5px;
+        gap: 0;
+    }
+    .vitrine--list{
+        gap:5px;
     }
     .main--carrinho{
         width: 100%;
-        padding: 5px;
+        height: 235px;
+        padding: 0 5px 0 5px;
     }
 }

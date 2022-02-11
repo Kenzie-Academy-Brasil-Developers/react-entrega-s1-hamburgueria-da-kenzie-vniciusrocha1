@@ -46,3 +46,9 @@
     color: #E0E0E0;
 }
 .Flat{height:60px;}
+
+@media screen and (max-width:768px){
+    .App {
+        gap:0;
+    }
+}
